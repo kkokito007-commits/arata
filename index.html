@@ -12,73 +12,85 @@
 <meta property="og:image" content="https://kkokito007-commits.github.io/arata/img/og.jpg">
 <meta property="og:url" content="https://kkokito007-commits.github.io/arata/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FFF1CF">
+<meta name="theme-color" content="#FEFDFB">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..600;1,400..500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<main>
+<div class="container">
 
-  <section class="row intro" aria-label="About Arata Nakatsuji">
-    <img class="portrait" src="img/arata-portrait-300.jpg" srcset="img/arata-portrait-300.jpg 1x, img/arata-portrait-600.jpg 2x" alt="Portrait of Arata Nakatsuji" width="144" height="144">
-    <div class="col">
-      <h1>Arata Nakatsuji</h1>
-      <p class="role"><span>Co-founder and CEO, SAKRA</span><span class="sep"> · </span><span>Chairman, JINEN Inc.</span></p>
-      <p>Arata is a member of the founding family behind OMRON, which is headquartered in Kyoto, and the tenth generation of the house of Maruyama&nbsp;Ōkyo, the celebrated eighteenth-century Kyoto painter.</p>
+  <header class="header">
+    <img class="profile-image" src="img/arata-portrait-300.jpg" srcset="img/arata-portrait-300.jpg 1x, img/arata-portrait-600.jpg 2x" alt="Portrait of Arata Nakatsuji" width="80" height="80">
+    <div class="header-text">
+      <h1 class="name">Arata Nakatsuji</h1>
+      <nav aria-label="Sections">
+        <a href="#career">Career</a>
+        <a href="#business">Business</a>
+        <a href="#kyoto">Kyoto</a>
+      </nav>
+    </div>
+  </header>
+
+  <p class="tagline">Co-founder and CEO of SAKRA. Chairman of JINEN&nbsp;Inc.</p>
+
+  <main>
+
+    <div class="beats">
+      <p>Arata is a member of the founding family behind OMRON, which is headquartered in Kyoto, and the tenth generation of the house of Maruyama&nbsp;<span class="macron">Ō</span>kyo, the celebrated eighteenth-century Kyoto painter.</p>
       <p>He spent five years in Silicon Valley. In San&nbsp;Francisco he founded AI ventures in music and healthcare and led a multinational team of 40. He also runs LYTA CAPITAL, the company that manages his own assets.</p>
-      <p class="label career-label">Career</p>
-      <ul class="career">
+    </div>
+
+    <section class="block" id="career" aria-labelledby="career-label">
+      <h2 class="label" id="career-label">Career</h2>
+      <ul class="lines">
         <li>Forbes JAPAN 30 Under 30 (2023)</li>
         <li>Global Shaper, World Economic Forum</li>
         <li>B.A., Political Science and Economics, Waseda&nbsp;University</li>
         <li>Tea ceremony, Urasenke school</li>
         <li>Classical vocalist</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section class="row" aria-labelledby="business">
-    <h2 id="business" class="label">Business</h2>
-    <div class="col companies">
-      <article class="company">
-        <h3 class="wordmark">SAKRA</h3>
-        <p>SAKRA acquires Japan’s enduring small and mid-sized companies as their owners retire, modernizes them with AI and holds them for the long term. Many of these companies have no successor. SAKRA keeps them, and the people and customers who depend on them, in business. Arata is co-founder and CEO.</p>
-        <p><a href="https://sakra.com" target="_blank" rel="noopener">sakra.com</a></p>
-      </article>
-      <article class="company">
-        <h3><img class="logo" src="img/jinen-stacked-navy.png" alt="JINEN" width="76" height="78"></h3>
-        <dl class="areas">
-          <div><dt>Japan market entry</dt><dd>Brings overseas companies into Japan and supports their first year: partners, first customers, hiring and licensing. Brand and creative work with Ultra&nbsp;Super&nbsp;New, Tokyo.</dd></div>
-          <div><dt>Secondaries and pre-IPO</dt><dd>Secondary and pre-IPO shares in leading U.S. private companies, for families in Japan and Asia. JINEN introduces qualified families to licensed firms, which handle each transaction.</dd></div>
-          <div><dt>Japanese art</dt><dd>Works from Edo-period masters to modern nihonga, introduced to buyers privately or through the auction houses. Authentication rests with independent specialists and the auction houses.</dd></div>
-          <div><dt>Real estate</dt><dd>Off-market residences, historic townhouses and ryokan in Tokyo, Kyoto, Niseko and Karuizawa, from a single residence to a portfolio. A licensed brokerage handles each transaction.</dd></div>
-        </dl>
-      </article>
-    </div>
-  </section>
+    <section class="block" id="business" aria-labelledby="business-label">
+      <h2 class="label" id="business-label">Business</h2>
+      <div class="entries">
+        <article class="entry">
+          <h3 class="wordmark">SAKRA</h3>
+          <p class="desc">SAKRA acquires Japan’s enduring small and mid-sized companies as their owners retire, modernizes them with AI and holds them for the long term. Many of these companies have no successor. SAKRA keeps them, and the people and customers who depend on them, in business. Arata is co-founder and CEO.</p>
+          <p class="site"><a href="https://sakra.com" target="_blank" rel="noopener">sakra.com</a></p>
+        </article>
+        <article class="entry">
+          <h3><img class="logo" src="img/jinen-stacked-ink.png" alt="JINEN" width="64" height="66"></h3>
+          <dl class="areas">
+            <div><dt>Japan market entry</dt><dd>Brings overseas companies into Japan and supports their first year: partners, first customers, hiring and licensing. Brand and creative work with Ultra&nbsp;Super&nbsp;New, Tokyo.</dd></div>
+            <div><dt>Secondaries and pre-IPO</dt><dd>Secondary and pre-IPO shares in leading U.S. private companies, for families in Japan and Asia. JINEN introduces qualified families to licensed firms, which handle each transaction.</dd></div>
+            <div><dt>Japanese art</dt><dd>Works from Edo-period masters to modern nihonga, introduced to buyers privately or through the auction houses. Authentication rests with independent specialists and the auction houses.</dd></div>
+            <div><dt>Real estate</dt><dd>Off-market residences, historic townhouses and ryokan in Tokyo, Kyoto, Niseko and Karuizawa, from a single residence to a portfolio. A licensed brokerage handles each transaction.</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
 
-  <section class="row" aria-labelledby="kyoto">
-    <h2 id="kyoto" class="label">Kyoto</h2>
-    <div class="col">
-      <p>Late March 2027. A private gathering of founding families, hosted by Arata. By&nbsp;invitation&nbsp;only.</p>
-    </div>
-  </section>
+    <section class="block" id="kyoto" aria-labelledby="kyoto-label">
+      <h2 class="label" id="kyoto-label">Kyoto</h2>
+      <div class="entry">
+        <p class="lead">Late March 2027. A private gathering of founding families, hosted&nbsp;by&nbsp;Arata.</p>
+        <p class="note">By invitation only.</p>
+      </div>
+    </section>
 
-</main>
+  </main>
 
-<footer class="foot">
-  <div class="row">
-    <span class="label" aria-hidden="true"></span>
-    <div class="col">
-      <p><a href="mailto:arata@lyta-group.com">arata@lyta-group.com</a></p>
-      <p class="legal">For information only. This page is not an offer or a solicitation to buy or sell any security.</p>
-    </div>
-  </div>
-</footer>
+  <footer class="footer">
+    <a href="mailto:arata@lyta-group.com">arata@lyta-group.com</a>
+    <p class="legal">For information only. This page is not an offer or a solicitation to buy or sell any security.</p>
+  </footer>
+
+</div>
 </body>
 </html>
